@@ -13,7 +13,7 @@ int main(void){
 	for(i=0;i<MAXLOOP;i++){
 		pid =fork();
 		if(pid == 0){
-			execl("./test",NULL);
+			execl("./test", "test", NULL);
 			//printf("chile process\n");
 			return 0;
 		}
